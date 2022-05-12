@@ -22,6 +22,6 @@ public class WelcomeController {
 	@GetMapping("/welcome-bean/{username}")
 	public Welcome welcomeWithPathVariable(@PathVariable String username) {
 		//throw new RuntimeException("Some error has occured! Please contact administrator"); 
-		return new Welcome(String.format("Welcome Bean message updated !!!, %s", username));
+		return new Welcome(String.format("Welcome Bean message updated, %s", username));
 	}
 }
